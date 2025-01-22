@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #fefcfb;
+    color: #63433f;
+    font-size: 16px;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #faf3f0;
+    color: #63433f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    border-bottom: 3px solid #e8e2df;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+header h1 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+header nav {
+    display: flex;
+    gap: 25px;
+}
+
+header nav a {
+    color: #63433f;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 12px 8px;
+    border-radius: 6px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header nav a:hover {
+    background-color: #e8e2df;
+    color: #020202;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about img {
+    margin-top: 20px;
+    width: 200px;
+    height: auto;
+    margin-left: 20px;
+    border-radius: 15%;
+    object-fit: cover;
+    border: 5px solid #e8e2df;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.about-content {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skills {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    border-radius: 15px;
+    margin: 30px auto;
+    max-width: 900px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.skills .skill img {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s ease;
+}
+
+.skills .skill img:hover {
+    transform: scale(1.15);
+}
+
+.projects {
+    background-color: #faf3f0;
+    padding: 50px 50px;
+    border-top: 1px solid #e8e2df;
+}
+
+.projects .project {
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+    max-width: 800px;
+    margin: 0 auto 30px;
+    transition: transform 0.3s ease;
+}
+
+.projects .project:hover {
+    transform: translateY(-5px);
+}
+
+.projects h3 {
+    font-size: 20px;
+    color: #7b6461;
+    margin-bottom: 10px;
+}
+
+.projects p {
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.projects img {
+    width: 45%;
+    border-radius: 20%;
+    margin-top: 10px;
+    transition: transform 0.3s ease;
+}
+
+.contact {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin: 30px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.contact p {
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.contact a {
+    color: #a37a74;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+.contact a:hover {
+    color: #7b6461;
+    text-decoration: underline;
+}
+
+.contact .social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact .social img {
+    width: 35px;
+    height: 35px;
+    transition: transform 0.3s ease;
+}
+
+.contact .social img:hover {
+    transform: scale(1.2);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #faf3f0;
+    color: #7b6461;
+    font-size: 14px;
+    border-top: 1px solid #e8e2df;
+}
+
+ .btn {
+    background-color: #7b6461; 
+    color: #fff; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+a {
+    display: inline-block;
+    color: #ffffff; 
+    text-decoration: none;
+    font-size: 16px; 
+    font-weight: bold; 
+    padding: 10px 20px; 
+    border-radius: 5px;
+    transition: background-color 0.3s ease; 
+}
+
+
+a:hover {
+    background-color: #a37a74; 
+    color: #e2e2e2; 
+    text-decoration: underline;
+}
+
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    section {
+        padding: 30px 10px;
+    }
+
+    .projects img {
+        max-width: 100%;
+    }
+
+    .contact p {
+        font-size: 14px;
+    }
+
+    .contact a {
+        font-size: 14px;
+    }
+}
